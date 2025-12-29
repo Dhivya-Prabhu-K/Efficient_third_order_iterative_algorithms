@@ -7,10 +7,7 @@ function [x,x0,y0,y1]=fixedzser_fourth_1(n,x0,y0,y1)
     sqde=sqrt(abs(sq));
     h=y0/(y1*(1-x0*x0)+x0*y0);
    
-    argu=atan(sqde*h)/sqde;    
-    if ~h<0
-       argu=argu-pi/sqde; 
-   end    
+    argu=atan(sqde*h)/sqde;       
    de=tanh(argu);
    x=(x0-de)/(1-x0*de);   
    erro=abs(1-x/x0);
@@ -29,4 +26,5 @@ function [x,x0,y0,y1]=fixedzser_fourth_1(n,x0,y0,y1)
         erro=abs(1-x/x0);
     end
 end
+
 
