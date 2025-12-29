@@ -49,9 +49,7 @@ function [x,x0,y0,y1, i]=fixedzser_fourth_1(n,x0,y0,y1)
     h=y0/(y1*(1-x0*x0)+x0*y0);
    
     argu=atan(sqde*h)/sqde;    
-    if h>1
-       argu=argu-pi/sqde; 
-   end    
+   
    de=tanh(argu);
    x=(x0-de)/(1-x0*de);   
    erro=abs(1-x/x0);
@@ -107,6 +105,7 @@ function [y0,yp1]=seriestay_1(n,xp,t,y0,yp1)
  y0=suma;yp1=sumad;
  y0=y0*1.e30;
  yp1=yp1*1.e30;
+
 
 
 
