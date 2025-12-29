@@ -7,10 +7,7 @@ function [x,x0,y0,y1]=fixedzser_fourth_1_vpa(n,x0,y0,y1)
     sqde=sqrt(abs(sq));
     h=y0/(y1*(1-x0*x0)+x0*y0);
    
-    argu=vpa(atan(sqde*h)/sqde);    
-    if h>1
-       argu=argu-vpa(pi/sqde); 
-    end    
+    argu=vpa(atan(sqde*h)/sqde);       
    de=vpa(tanh(argu));
    x=(x0-de)/(1-x0*de);   
    erro=abs(1-x/x0);
@@ -29,4 +26,5 @@ function [x,x0,y0,y1]=fixedzser_fourth_1_vpa(n,x0,y0,y1)
         erro=abs(1-x/x0);
     end
 end
+
 
