@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains **MATLAB codes** for the numerical comparison of four iterative algorithms used to compute the zeros of special functions.
+This repository contains **MATLAB codes** for the numerical comparison of some iterative algorithms used to compute the zeros of special functions.
 
 The comparisons are performed for:
 - Bessel functions  
