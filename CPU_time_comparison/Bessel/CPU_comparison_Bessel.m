@@ -1,5 +1,5 @@
 clear; clc;
-n_values = linspace(10000, 110000, 15);
+n_values = linspace(10000, 11000, 15);
 num_runs = 10;
 
 time_method1 = zeros(size(n_values));
@@ -34,3 +34,4 @@ set(h_legend, 'Location', 'NorthWest', 'FontSize', 12);
 % title('Bessel zeros', 'FontSize', 16);
 grid on;
 set(gca, 'FontSize', 12);
+
