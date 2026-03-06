@@ -19,8 +19,9 @@ MATLAB codes to compare the **average CPU run time** of the iterative algorithms
 
 ### 2. Error_comparison
 MATLAB codes to compare the **numerical errors** produced by the algorithms when computing zeros.
-
-### 3. Table_comparison
+### 3. MR_Er-F
+MATLAB codes to generate tables which presents the relative maximum error with respect to the fourth-order method.
+### 4. Table_comparison
 MATLAB codes to generate tables summarizing:
 - Total number of iterations  
 - Average CPU time  
